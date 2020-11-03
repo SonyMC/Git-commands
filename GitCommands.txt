@@ -1,11 +1,26 @@
-To add a new repo:
-First create the repo in github ,choose the gitignore template( only then will teh main branch be shown), copy the main branch repo link and then go to your source folder in local machine and do the following :
+"To add a new repo:
+
+Option 1: 
+-----------
+First create the repo in github ( make sure to chosse gitingore->java/*/etc., which will then show a master branch), copy the repo link and then go to your source folder in local machine and do the following :
 git init 
 git remote add origin https://github.com/SonyMC/library-apis.git
-git pull origin main-> for the first time 
-** git pull origin master -> for subsequent pulls use this cmd
+git pull origin main ( * for non-java) 
+** git pull origin master
 git add -A 
 git commit -m "Initial Commit"
+git push origin master
+
+
+Option 2
+--------
+*** Alternate method:
+irst create the repo in github
+git init
+git add * 
+git add .gitignore -> add tehe gitignore file
+git commit -m "first commit"
+git remote add origin https://github.com/SonyMC/azure-devops-kubernetes-terraform-pipeline.git
 git push origin master
 
 git checkout -b develop              			-> new branch called develop
